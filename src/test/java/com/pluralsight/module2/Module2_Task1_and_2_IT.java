@@ -59,7 +59,7 @@ public class Module2_Task1_and_2_IT extends Mockito {
 
 			 try {
 				 when(request.getPathInfo()).thenReturn("/edit");
-				 //PowerMockito.doNothing().when(controllerServlet, "showEditForm", request, response);
+				 PowerMockito.doNothing().when(controllerServlet, "showEditForm", request, response);
 				 when(request.getParameter("id")).thenReturn(tempID);
 			 } catch (MethodNotFoundException e) {}
 

@@ -59,7 +59,7 @@ public class Module1_Task2_and_3_IT {
 
        try {
          Mockito.when(request.getPathInfo()).thenReturn("/delete");
-         //PowerMockito.doNothing().when(controllerServlet, "deleteBook", request, response);
+         PowerMockito.doNothing().when(controllerServlet, "deleteBook", request, response);
          Mockito.when(request.getParameter("id")).thenReturn(tempID);
        } catch (MethodNotFoundException e) {}
 
